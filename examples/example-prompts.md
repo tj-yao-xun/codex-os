@@ -14,3 +14,12 @@ Review this pull request using code-review and separate must-fix from nice-to-ha
 
 ## Feature
 Implement this settings page using feature-implementation with explicit acceptance targets.
+
+## Architecture-sensitive task
+Evaluate whether this task requires architecture-change before implementation.
+
+## Hotfix
+Apply the emergency payment rollback patch using hotfix-mode.
+
+## Test-first
+Fix this sorting bug using test-first.

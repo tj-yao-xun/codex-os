@@ -1,0 +1,31 @@
+# Prompt before destructive filesystem operations.
+
+prefix_rule(
+    pattern = ["rm", "-rf"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["sudo", "rm"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["find", ".", "-delete"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["mv"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["chmod", "-R"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["chown", "-R"],
+    decision = "prompt",
+)

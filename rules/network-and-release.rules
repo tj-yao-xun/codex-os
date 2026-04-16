@@ -1,0 +1,41 @@
+# Prompt before network, deployment, or publishing commands.
+
+prefix_rule(
+    pattern = ["gh", "pr"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["gh", "repo"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["npm", "publish"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["pnpm", "publish"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["yarn", "publish"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["docker", "push"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["kubectl"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["terraform", "apply"],
+    decision = "prompt",
+)

@@ -1,0 +1,31 @@
+# Prompt before dangerous git operations.
+
+prefix_rule(
+    pattern = ["git", "push"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["git", "push", "--force"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["git", "reset", "--hard"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["git", "clean", "-fd"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["git", "rebase"],
+    decision = "prompt",
+)
+
+prefix_rule(
+    pattern = ["git", "checkout", "--"],
+    decision = "prompt",
+)
